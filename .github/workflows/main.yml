@@ -4,6 +4,10 @@ on:
  push:
     branches: 
     - main
+    - mine
+ pull_request:
+     branches: 
+     - mine
     
  workflow_dispatch:
   
