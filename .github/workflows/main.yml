@@ -4,7 +4,7 @@ on:
  push:
     branches: 
     - main
-    - mine
+    
  workflow_dispatch:
   
 
@@ -27,7 +27,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
       with:
-       ref: mine
+       ref: main
        
     - name: Show Directory
       run: 'mvn compile'
